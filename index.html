@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Developer Pagina</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="preload" href="css/normalize.css">
+      <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
     <header>
-        <h1>Sergio Orion Developer</h1>
+        <h1 class="my-title">Sergio Orion <span>Developer</span></h1>
     </header>
     <nav>
         <a href="#">Inicio</a>
@@ -18,10 +22,6 @@
     </nav>
     <section>
         <h2>Desarollador Full Stack</h2>
-        <!--
-version: "2.0"
-unicode: "f680"
--->
 <svg
   xmlns="http://www.w3.org/2000/svg"
   width="32"
@@ -59,12 +59,7 @@ unicode: "f680"
         </section>
 
         <h2>Aplicaciones moviles</h2>
-<!--
-tags: [os, company, system, interface, software, devices, logo]
-category: Brand
-version: "1.9"
-unicode: "ec17"
--->
+
 <svg
   xmlns="http://www.w3.org/2000/svg"
   width="32"
@@ -105,12 +100,7 @@ unicode: "ec17"
         </section>
 
         <h2>Soluciones con IA</h2>
-        <!--
-tags: [nonprofit, artificial, intelligence, website]
-category: Brand
-version: "2.5"
-unicode: "f78e"
--->
+
 <svg
   xmlns="http://www.w3.org/2000/svg"
   width="32"
@@ -136,6 +126,33 @@ unicode: "f78e"
     </main>
     <section>
         <h2>Contacto</h2>
+        <form>
+          <fieldset >
+            <legend>Llena tus datos de contacto</legend>
+            <div>
+              <label for="">Nombre</label>
+              <input type="text" placeholder="Nombre completo">
+            </div>
+
+            <div>
+              <label for="">Teléfono</label>
+              <input type="tel" placeholder="Tu numero telefonico">
+            </div>
+
+            <div>
+              <label for="">Email</label>
+              <input type="email" placeholder="Tu correo electronico">
+            </div>
+
+
+            <div>
+              <label for="">Mensaje</label>
+              <textarea></textarea>
+
+            </div>
+            <div><input type="submit" value="Enviar"></div>
+          </fieldset>
+        </form>
     </section>
 
     <footer>
