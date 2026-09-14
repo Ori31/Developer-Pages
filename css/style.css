@@ -1,64 +1,75 @@
-:root{
-    --blanco:#fff;
-    --oscuro:#212121;
-    --primario:#ffc107;
-    --secundario:#0097a7;
-    --gris:#757575;
+:root {
+    --blanco: #fff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
 }
 
 .krub-regular {
-  font-family: "Krub", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Krub", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .krub-bold {
-  font-family: "Krub", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+    font-family: "Krub", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
-body{
+body {
     background-color: rgb(255, 255, 255);
+
+
 }
 
 
 /*  Truco para uniformidad de texto entre navegadores*/
-html{
+html {
     font-size: 62.5%;
 }
 
 
-body{
+body {
     font-size: 16px;
 }
 
-.my-title{
+.my-title {
     text-align: center;
     font-size: 3.8rem;
 }
 
-.my-title span{
+.my-title span {
     font-size: 2rem;
 }
 
-.navegacion-principal{
+.navegacion-principal {
     background-color: var(--secundario);
     /* Margin es por fuera y padding es por dentro*/
-    display: flex; /*Flexbox es para alinear elementos*/
+    display: flex;
+    flex-direction: column;
+    /*Flexbox es para alinear elementos*/
     justify-content: space-between;
-    font-weight: bold; /*En negritas*/
+    font-weight: bold;
+    /*En negritas*/
     font-size: 2rem;
-
+    align-items: center;
 }
 
-.navegacion-principal  a:hover{
+@media (min-width: 780px) {
+    .navegacion-principal {
+        display: row;
+    }
+}
+
+.navegacion-principal a:hover {
     background-color: var(--primario);
     color: var(--oscuro);
 
 }
 
-.navegacion-principal   a{
+.navegacion-principal a {
     color: var(--blanco);
     text-decoration: none;
     padding: 1rem;
@@ -69,6 +80,48 @@ body{
     margin: 0 auto;
 }
 
-.nav-bg{
+.nav-bg {
     background-color: var(--secundario);
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+.hero {
+    background-image: url('../src/canva-banner-para-linkedin-profesional-analista-en-ciberseguridad-moderno-azul-y-blanco-GbOCj5gsyWg-1818750387.jpg');
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.contenido-hero p,
+.contenidohero h2 {
+    color: var(--blanco);
+}
+
+.ubicacion {
+    display: flex;
+    align-items: flex-end;
 }
